@@ -3,7 +3,7 @@ import PageTemplate from './PageTemplate';
 import TodoInput from './TodoInput';
 import TodoList from './TodoList';
 
-class App extends Component {
+class TodoApp extends Component {
 	state = {
 		input: '',
 		todos: []
@@ -67,4 +67,4 @@ class App extends Component {
 	}
 }
 
-export default App;
+export default TodoApp;
