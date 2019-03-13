@@ -2,16 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './CounterPresenter.css';
 
-const CounterPresenter = ({ number, color, onIncrement, onDecrement, onSetColor }) => {
+const CounterPresenter = ({ number, color, index, onIncrement, onDecrement, onSetColor }) => {
 	return (
 		<div
 			className="Counter"
-			onClick={onIncrement}
+			onClick={() => onIncrement(index)}
 			onContextMenu={(e) => {
 				e.preventDefault();
-				onDecrement();
+				onDecrement(index);
 			}}
-			onDoubleClick={onSetColor}
+			onDoubleClick={() => onSetColor(index)}
 			style={{
 				backgroundColor: color
 			}}
@@ -22,6 +22,7 @@ const CounterPresenter = ({ number, color, onIncrement, onDecrement, onSetColor 
 };
 
 CounterPresenter.propTypes = {
+	index: PropTypes.number,
 	number: PropTypes.number,
 	color: PropTypes.string,
 	onIncrement: PropTypes.func,

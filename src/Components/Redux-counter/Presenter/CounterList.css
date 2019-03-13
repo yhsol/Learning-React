@@ -1,0 +1,7 @@
+.CounterList {
+	margin-top: 2rem;
+	display: felx;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
