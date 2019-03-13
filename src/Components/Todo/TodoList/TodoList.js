@@ -5,6 +5,9 @@ import TodoItem from '../TodoItem';
 const ListForm = styled.div`margin: 0;`;
 
 class TodoList extends Component {
+	shouldComponentUpdate(nextProps, nextState) {
+		return this.props.todos !== nextProps.todos;
+	}
 	render() {
 		const { todos, onToggle, onRemove } = this.props;
 		const todoList = todos.map((todo) => (

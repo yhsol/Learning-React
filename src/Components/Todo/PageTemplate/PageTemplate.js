@@ -29,9 +29,10 @@ const SContentTwo = styled.div`margin-top: 5px;`;
 const PageTemplate = ({ children }) => {
 	return (
 		<SPageTemplate>
-			<SHeader>일정관리</SHeader>
+			<SHeader>Scheduler</SHeader>
 			<SContent>{children}</SContent>
 			{/* Input 과 List로 나뉠 수 있다면 따로 구성할 수 있는데 그걸 어떻게 할까. */}
+			{/* 전달하는 prop을 from 과 children 으로 나눌 수 있다!! */}
 		</SPageTemplate>
 	);
 };
