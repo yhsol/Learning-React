@@ -1,6 +1,6 @@
 import React from 'react';
 import Counter from './CounterPresenter';
-import PropTypes from 'porp-types';
+import PropTypes from 'prop-types';
 
 import './CounterList.css';
 

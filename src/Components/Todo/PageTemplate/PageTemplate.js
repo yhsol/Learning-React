@@ -24,8 +24,6 @@ const SHeader = styled.div`
 
 const SContent = styled.div`margin-top: 5px;`;
 
-const SContentTwo = styled.div`margin-top: 5px;`;
-
 const PageTemplate = ({ children }) => {
 	return (
 		<SPageTemplate>
