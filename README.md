@@ -51,4 +51,27 @@ const SText = styled.div`
 	current={done === true} 를 물어보면 current 값의 boolean 값을 구한다.
 
 ## Redux
-
+- 스토어
+- 액션
+- 디스패치
+- 리듀서
+- 구독
+- mapStateToProps
+- mapDispatchToProps
+- mergeProps
+- Immutable.js
+ - 객체 불변성
+  - 리액트 컴포넌트는 state 또는 상위 컴포넌트에서 전달받은 props 값이 변할 때 렌더링되는데,
+	  배열이나 객체를 직접 수정한다면 내부 값을 수정했을때, 같은 레퍼런스를 가리키는 배열, 객체 역시 수정된다.
+		- 그렇기때문에 전개연산자를 사용해서 기존 값을 가진 새 객체 또는 배열을 만들어서 사용하는 것.
+		 객체에서 전개연산자, 배열에서 slice를 쓰는 것.
+		- 이러한 작업을 간소화 하려 만든것이 Imuutable.js
+ - Map
+  - Immutable 의 Map 은 객체 대신 사용하는 데이터 구조.
+	- Map({}) 과 같이 객체를 감싸는 구조로 사용한다.
+	- 자바스크립트의 Map 과는 다르다.
+  - 객체 내부에 또 다른 객체들이 있다면 내부 객체들도 Map 으로 감싸야 setIn, getIn 을 쓸 수 있다.
+	- 그것이 복잡할 때는 fromJS를 쓰면 된다.
+	
+	- List
+	 - Immutable 의 List 는 배열 대신 사용한다.
