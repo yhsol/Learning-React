@@ -1,12 +1,12 @@
 import React from 'react';
-import Counter from './CounterPresenter';
+import CounterPresenter from './CounterPresenter';
 import PropTypes from 'prop-types';
 
 import './CounterList.css';
 
 const CounterList = ({ counters, onIncrement, onDecrement, onSetColor }) => {
 	const counterList = counters.map((counter, i) => (
-		<Counter
+		<CounterPresenter
 			key={i}
 			index={i}
 			{...counter}

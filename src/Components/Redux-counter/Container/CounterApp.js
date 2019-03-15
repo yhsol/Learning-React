@@ -3,8 +3,6 @@ import Buttons from '../Presenter/Buttons';
 import CounterListContainer from '../Container/CounterListContainer';
 import getRandomColor from '../Lib/getRandomColor';
 
-import './CounterApp.css';
-
 import { connect } from 'react-redux';
 import * as actions from '../Actions';
 
