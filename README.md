@@ -48,6 +48,7 @@ const SText = styled.div`
 	<Tick type="checkbox" checked={done} readOnly />
 		<SText current={done === true}>{children}</SText>
 	와 같이 설정하고 current 값을 가져와서 확인하고 해당 값을 지정하면 된다.
+	current={done === true} 를 물어보면 current 값의 boolean 값을 구한다.
 
 ## Redux
 
