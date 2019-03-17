@@ -1,25 +1,30 @@
 import React, { useState, useEffect } from 'react';
 
 function something() {
-	const [ some, setSome ] = useState();
-	const [ thing, setThing ] = useState();
+	const [ some, setSome ] = useState('some');
+	const [ thing, setThing ] = useState('thing');
 
 	const somethingCool = () => {
-		setSome();
-		setThing();
+		setSome('some');
+		setThing('thing');
 	};
 	useEffect(() => {
-		something();
+		somethingCool();
+		console.log('rendered: ', some);
 	}, []);
-	return { some, thing };
+	console.log('rendering: ', some);
+	return { some, setSome, thing, setThing };
 }
 
 const ReactHooks = () => {
-	const { some, thing } = something();
+	const { some, setSome, thing, setThing } = something();
 	return (
 		<div>
 			{some}
 			{thing}
+			<br />
+			<button onClick={() => setSome(some + '1')}>+Some</button>
+			<button onClick={() => setThing(thing + '1')}>+Thing</button>
 		</div>
 	);
 };
