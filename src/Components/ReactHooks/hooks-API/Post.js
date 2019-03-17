@@ -1,7 +1,7 @@
 import React from 'react';
-import useRequest from './hooks/useRequest';
+import useRequest from './useRequest';
 
-const Post = (props) => {
+const Post = () => {
 	const [ response, loading, error ] = useRequest('https://jsonplaceholder.typicode.com/posts/1');
 
 	if (loading) {
@@ -14,7 +14,7 @@ const Post = (props) => {
 
 	if (!response) return null;
 
-	const { title, body, id } = response.data;
+	const { title, body } = response.data;
 
 	return (
 		<div>
