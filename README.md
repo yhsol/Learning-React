@@ -45,8 +45,8 @@ const SText = styled.div`
 
 - styled-components를 이용하게 되면 태그에서 바로 조건을 설정하는 것도 그 조건을 이용하는 방식도 기존의 css와 조금 다르다.
 	조건을 걸 때는, 
-	<Tick type="checkbox" checked={done} readOnly />
-		<SText current={done === true}>{children}</SText>
+```	<Tick type="checkbox" checked={done} readOnly />
+		<SText current={done === true}>{children}</SText>```
 	와 같이 설정하고 current 값을 가져와서 확인하고 해당 값을 지정하면 된다.
 	current={done === true} 를 물어보면 current 값의 boolean 값을 구한다.
 
@@ -91,3 +91,6 @@ const SText = styled.div`
 	- useEffect(() => {
 
 	}, []) 와 같이 구현해서 componentDidMount 만 하는 효과를 낼 수 있다.
+
+## CSS GRID
+- grid를 짤 때 grid-template 으로 짜고, grid-auto 를 통해 다시한번 지정하면 그 길이를 지킬 수 있다.
