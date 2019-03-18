@@ -44,15 +44,14 @@ const SText = styled.div`
 `;
 
 - styled-components를 이용하게 되면 태그에서 바로 조건을 설정하는 것도 그 조건을 이용하는 방식도 기존의 css와 조금 다르다.
-	조건을 걸 때는, 
+	조건을 걸 때는,	아래와 같이 설정하고 current 값을 가져와서 확인하고 해당 값을 지정하면 된다.
+	current={done === true} 를 물어보면 current 값의 boolean 값을 구한다.
 
 ```
 <Tick type="checkbox" checked={done} readOnly />
 		<SText current={done === true}>{children}</SText>
 ```
 
-	와 같이 설정하고 current 값을 가져와서 확인하고 해당 값을 지정하면 된다.
-	current={done === true} 를 물어보면 current 값의 boolean 값을 구한다.
 
 ## Redux
 - 스토어
