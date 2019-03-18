@@ -98,6 +98,6 @@ const SText = styled.div`
 	- componentDidMount 만을 구현하고자 할 때는 아래와 같이 쓸 수 있다.
 ```
 useEffect(() => {
-			something();
-	}, [])
+	something();
+}, [])
 ```
