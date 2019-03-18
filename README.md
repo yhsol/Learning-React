@@ -49,7 +49,7 @@ const SText = styled.div`
 
 ```
 <Tick type="checkbox" checked={done} readOnly />
-		<SText current={done === true}>{children}</SText>
+<SText current={done === true}>{children}</SText>
 ```
 
 
