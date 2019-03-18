@@ -56,6 +56,9 @@ const SText = styled.div`
 <SText current={done === true}>{children}</SText>
 ```
 
+- styled-components 는 편하고 좋지만 기존의 css를 쓸때와 다른부분들이 있어서 그것들을 채워갈 방법들을 정리해 두어야 겠다.
+- 굳이 styled-components 를 써야 하는것은 아니지만 확실히 프로젝트 전체의 가독성에 있어서 더 낫다.
+
 
 ## Redux
 - 스토어
@@ -82,6 +85,8 @@ const SText = styled.div`
 	
 	- List
 	 - Immutable 의 List 는 배열 대신 사용한다.
+
+## REST API
 
 ## Hooks
 - function 으로 기존의 Container 와 같은 기능들을 구현 할 수 있다.
