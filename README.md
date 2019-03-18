@@ -87,6 +87,9 @@ const SText = styled.div`
 - function 으로 기존의 Container 와 같은 기능들을 구현 할 수 있다.
 - export 하는 const 로 Presenter 와 같은 기능들을 구현 할 수 있다.
 - Container 와 Presenter 를 하나의 컴포지션에 구현 할 수 있다.
+ - hooks-API 에서 Post 와 useRequest 는 기존의 container, presenter 와 같이 한쪽에 함수를, 한쪽에 프레젠트를 넣듯이 구현 한 것이고,
+  Fetch 는 그둘을 컴포넌트 하나에 구현한 것이다.
+	때에 따라 편한 방법으로 하면 되겠다.
 
 - useState
   - const [A, B] = useState();
@@ -102,4 +105,4 @@ useEffect(() => {
 }, [])
 ```
 
-## GraphQL 과 APOLLO
+## GraphQL 과 Apollo
