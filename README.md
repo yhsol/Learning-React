@@ -3,9 +3,8 @@
 ## Todo project
 
 ### functional component 에서 파라미터로 전달되는 props 비구조화 할당하기.
--  
+-  example
 ```
-example
 	const TodoListTemplate = ({form, children}) => {
   	return (
     <main className="todo-list-template">
