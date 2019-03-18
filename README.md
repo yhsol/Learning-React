@@ -84,8 +84,8 @@ const SText = styled.div`
 	 - Immutable 의 List 는 배열 대신 사용한다.
 
 ## Hooks
-- function 으로 기존의 Container 와 같은 기능들을 넣을 수 있다.
-- export 하는 const 로 Presenter 와 같은 기능들을 넣을 수 있다.
+- function 으로 기존의 Container 와 같은 기능들을 구현 할 수 있다.
+- export 하는 const 로 Presenter 와 같은 기능들을 구현 할 수 있다.
 - Container 와 Presenter 를 하나의 컴포지션에 구현 할 수 있다.
 
 - useState
@@ -95,6 +95,9 @@ const SText = styled.div`
 
 - useEffect
   - componentDidMouont, componentDidUpdate 와 같은 기능을 구현한다.
-	- useEffect(() => {
-
-	}, []) 와 같이 구현해서 componentDidMount 만 하는 효과를 낼 수 있다.
+	- componentDidMount 만을 구현하고자 할 때는 아래와 같이 쓸 수 있다.
+```
+useEffect(() => {
+			something();
+	}, [])
+```
