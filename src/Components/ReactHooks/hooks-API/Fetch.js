@@ -24,7 +24,11 @@ function useFetch(url) {
 
 const Fetch = () => {
 	const {payload, loading, error} = useFetch("http://aws.random.cat/meow");
-	return <div>{loading && <span>loading...</span>}{!loading && error && <span>{error}</span>}{!loading && payload && <img src={payload.file} width="260" />}</div>;
+	return <div>
+			{loading && <span>loading...</span>}
+			{!loading && error && <span>{error}</span>}
+			{!loading && payload && <img src={payload.file} width="260" alt="catimage" />}
+			</div>;
 };
 
 export default Fetch;
