@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import BookApp from './Components/Book/BookApp';
+import TodoApp from './Components/Todo/TodoApp';
 
-ReactDOM.render(<BookApp />, document.getElementById('root'));
+ReactDOM.render(<TodoApp />, document.getElementById('root'));

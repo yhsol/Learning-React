@@ -77,13 +77,8 @@ const SText = styled.div`
 		 객체에서 전개연산자, 배열에서 slice를 쓰는 것.
 		- 이러한 작업을 간소화 하려 만든것이 Imuutable.js
  - Map
-  - Immutable 의 Map 은 객체 대신 사용하는 데이터 구조.
-	- Map({}) 과 같이 객체를 감싸는 구조로 사용한다.
-	- 자바스크립트의 Map 과는 다르다.
-  - 객체 내부에 또 다른 객체들이 있다면 내부 객체들도 Map 으로 감싸야 setIn, getIn 을 쓸 수 있다.
 	- 그것이 복잡할 때는 fromJS를 쓰면 된다.
-	
-	- List
+- List
 	 - Immutable 의 List 는 배열 대신 사용한다.
 
 ## REST API
@@ -111,3 +106,5 @@ useEffect(() => {
 ```
 
 ## GraphQL 과 Apollo
+
+## State / Props / 상태관리

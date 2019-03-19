@@ -1,0 +1,34 @@
+.todo-item {
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	.tick {
+		margin-right: 1rem;
+	}
+	.text {
+		flex: 1;
+		word-break: break-all;
+		&.done {
+			text-decoration: line-through;
+		}
+	}
+	.delete {
+		margin-left: 1rem;
+		font-size: 0.8rem;
+		&:hover {
+			color: green;
+			text-decoration: underline;
+		}
+	}
+	&:nth-child(odd) {
+		background: grey;
+	}
+	&:hover {
+		background: grey;
+	}
+}
+
+.todo-item + .todo-item {
+	border-top: 1px solid grey;
+}
